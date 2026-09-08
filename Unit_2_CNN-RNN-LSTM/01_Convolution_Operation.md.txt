@@ -1,0 +1,87 @@
+# Convolution Operation
+
+## Overview
+
+Convolution is the core operation in Convolutional Neural Networks (CNNs).
+
+It extracts useful features from input data by applying small filters called kernels.
+
+---
+
+## Why Convolution?
+
+Instead of connecting every pixel to every neuron, CNNs focus on local regions.
+
+Benefits:
+
+- Fewer parameters
+- Faster computation
+- Better feature extraction
+
+---
+
+## Components
+
+### Input
+
+Image represented as a matrix.
+
+### Kernel (Filter)
+
+Small matrix used to detect patterns.
+
+Example:
+
+| 1 | 0 | -1 |
+|---|---|----|
+| 1 | 0 | -1 |
+| 1 | 0 | -1 |
+
+Detects vertical edges.
+
+### Feature Map
+
+Output produced after convolution.
+
+---
+
+## Stride
+
+Determines how far the filter moves.
+
+Stride = 1 → move one pixel
+
+Stride = 2 → move two pixels
+
+Larger stride reduces output size.
+
+---
+
+## Padding
+
+Adds extra pixels around borders.
+
+Types:
+
+- Valid Padding
+- Same Padding
+
+---
+
+## Formula
+
+Output = Input * Kernel
+
+---
+
+## Applications
+
+- Edge Detection
+- Texture Detection
+- Pattern Recognition
+
+---
+
+## Summary
+
+Convolution extracts meaningful features using kernels while reducing computational cost.
